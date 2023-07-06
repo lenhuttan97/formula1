@@ -1,6 +1,6 @@
 # formula1
 
-formula1 is a Python library for dealing with word pluralization.
+formula1 is a java library for dealing with word pluralization.
 
 ## Installation
 

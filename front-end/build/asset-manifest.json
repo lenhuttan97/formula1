@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1429e2dc.css",
+    "main.js": "/static/js/main.299ba81f.js",
+    "static/js/787.e0aeaf2d.chunk.js": "/static/js/787.e0aeaf2d.chunk.js",
+    "static/media/all.png": "/static/media/all.ee8e237945427682eb9e.png",
+    "static/media/max-verstappen-red-bull-racing-1.webp": "/static/media/max-verstappen-red-bull-racing-1.dc0ee089c7a2cc979813.webp",
+    "static/media/sergio-perez-red-bull-racing-1.webp": "/static/media/sergio-perez-red-bull-racing-1.3a0b8e8d5d92c0d68410.webp",
+    "static/media/lance-stroll-aston-martin-raci-1.webp": "/static/media/lance-stroll-aston-martin-raci-1.ef60316368f8b52666c6.webp",
+    "static/media/esteban-ocon-alpine-1.webp": "/static/media/esteban-ocon-alpine-1.fe489829450554c92127.webp",
+    "static/media/fernando-alonso-aston-martin-r-1.webp": "/static/media/fernando-alonso-aston-martin-r-1.4ce05b0735fc57738365.webp",
+    "static/media/lewis-hamilton-mercedes-1.webp": "/static/media/lewis-hamilton-mercedes-1.5f130574add204a29faa.webp",
+    "static/media/logan-sargeant-williams-1.webp": "/static/media/logan-sargeant-williams-1.5ef02d6d3aa0fa8b0534.webp",
+    "static/media/alex-albon-williams-1.webp": "/static/media/alex-albon-williams-1.37bab9fcfb8fe8ff16a1.webp",
+    "static/media/oscar-piastri-mclaren-1.webp": "/static/media/oscar-piastri-mclaren-1.ced2c576542046cb69be.webp",
+    "static/media/kevin-magnussen-haas-1.webp": "/static/media/kevin-magnussen-haas-1.4af177f278599c0b94b6.webp",
+    "static/media/pierre-gasly-alpine-1.webp": "/static/media/pierre-gasly-alpine-1.5badf8bb84765b43e20e.webp",
+    "static/media/lando-norris-mclaren-1.webp": "/static/media/lando-norris-mclaren-1.fafb1aa311856a5131d2.webp",
+    "static/media/zhou-guanyu-alfa-romeo-1.webp": "/static/media/zhou-guanyu-alfa-romeo-1.da58ae41f43dbcc83008.webp",
+    "static/media/yuki-tsunoda-alphatauri-1.webp": "/static/media/yuki-tsunoda-alphatauri-1.2c57f2686030ece1e5e7.webp",
+    "static/media/carlos-sainz-ferrari-1.webp": "/static/media/carlos-sainz-ferrari-1.15e13a86a65ade61fbe4.webp",
+    "static/media/nico-hulkenberg-haas-1.webp": "/static/media/nico-hulkenberg-haas-1.a30f7070f4b820b39871.webp",
+    "static/media/nyck-de-vries-alphatauri-1.webp": "/static/media/nyck-de-vries-alphatauri-1.7121ccd3609262e4d823.webp",
+    "static/media/george-russell-mercedes-1.webp": "/static/media/george-russell-mercedes-1.268c0aa36ff2e0537f8b.webp",
+    "static/media/charles-leclerc-ferrari-1.webp": "/static/media/charles-leclerc-ferrari-1.02308791ed34d2723421.webp",
+    "static/media/valtteri-bottas-alfa-romeo-1.webp": "/static/media/valtteri-bottas-alfa-romeo-1.dd189022c6fc0cbcc0ab.webp",
+    "static/media/f1_logo.svg": "/static/media/f1_logo.31352519ff140caf6b234ab3da89f6e1.svg",
+    "index.html": "/index.html",
+    "main.1429e2dc.css.map": "/static/css/main.1429e2dc.css.map",
+    "main.299ba81f.js.map": "/static/js/main.299ba81f.js.map",
+    "787.e0aeaf2d.chunk.js.map": "/static/js/787.e0aeaf2d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1429e2dc.css",
+    "static/js/main.299ba81f.js"
+  ]
+}

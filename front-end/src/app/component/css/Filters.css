@@ -1,0 +1,157 @@
+.filter {
+    width: 100%;
+}
+
+.filter .option {
+    display: flex;
+    height: 65px;
+}
+
+.filter .option .option-head {
+    width: 160px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.filter .option .option-head span {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 650;
+}
+
+.filter .option .option-item {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 30px;
+}
+
+.filter .option .option-item span {
+    /* border: 0.5px solid rgb(87, 84, 84); */
+    /* background-color: rgb(124, 120, 120); */
+    padding: 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.filter .option .option-item .active {
+    border: 0.5px solid rgb(87, 84, 84);
+    background-color: rgb(124, 120, 120);
+    font-size: 16px;
+    color: #fff;
+}
+
+.filter .option-current {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    margin-left: 5%;
+}
+
+.filter .option-current span {
+    border: 0.5px solid rgb(154, 154, 154);
+    background-color: rgb(1, 1, 1);
+    font-size: 16px;
+    padding: 3px 5px 3px 5px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.filter .list-option-item {
+    margin-top: 24px;
+}
+
+.filter .list-option-item ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    column-gap: 20px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter .list-option-item ul li{
+    color: rgb(165, 157, 157);
+    cursor: pointer;
+}
+
+.filter .list-option-item ul li:hover{
+    text-decoration: underline;
+    color: rgb(127, 121, 121);
+}
+
+.filter .list-option-item ul .active{
+    color: rgb(50, 47, 47);
+    padding: 2px 5px 2px 5px;
+    border-radius: 12px;
+    background-color: rgb(178, 163, 163);
+}
+
+
+.filter .list-option-item .option-filter-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter .list-option-item .option-filter-card .option-name{
+    width: min(80%, 800px);
+}
+
+.filter .list-option-item .option-filter-card .option-name ul{
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 20px;
+    padding-right: 10px;
+}
+
+.filter .list-option-item .option-filter-card .option-name ul li{
+   display: flex;
+   text-transform: uppercase;
+}
+
+
+.filter .list-option-item .option-filter-card  .option-card{
+    width: min(400px, 30%);
+    height: 240px;
+    position: relative;
+}
+
+.filter .list-option-item .option-filter-card  .option-flag{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-mask-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+.filter .list-option-item .option-filter-card  .option-img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-mask-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+/* .Contry-Flag{
+    width: 100% !important;
+    height: 100% !important;
+} */
+
+
+@media only screen and (max-width: 768px) {
+    
+}

@@ -1,0 +1,38 @@
+.container{
+  padding: 0 20px;
+}
+
+.container-flud{
+  margin: 0 auto;
+}
+
+.header {
+  height: 71px;
+  background-color: rgb(225, 6, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header img{
+  width: 170px;
+}
+
+.footer{
+  display: flex;
+  height: 10vh;
+  background-color: rgb(21, 21, 30);
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.footer .logo{
+  width: 170px;
+}
+.footer .logo img{
+  width: 100%;
+}
+
+.footer .title{
+  color: #fff;
+}

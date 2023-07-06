@@ -1,0 +1,658 @@
+.content {
+    display: flex;
+    margin-top: 100px;
+}
+
+.content .menu {
+    display: none;
+}
+
+.content .content-sibar {
+    flex: 1;
+    /* border: 1px solid antiquewhite; */
+    border-radius: 10px;
+    position: relative;
+    background-color: aliceblue;
+}
+
+.content .content-sibar ul {
+    position: relative;
+    list-style-type: none;
+    padding: 20px 0px 20px 20px;
+
+}
+
+.content .content-sibar ul li {
+    padding: 20px 0px 20px 20px;
+    position: relative;
+}
+
+
+.content .content-sibar ul li.active {
+    border-top: 1px solid aliceblue;
+    border-left: 1px solid aliceblue;
+    border-bottom: 1px solid aliceblue;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #fff;
+}
+
+
+.content .content-sibar ul li.active b {
+    height: 10px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.content .content-sibar ul li.active b:nth-child(1) {
+    position: absolute;
+    left: 0;
+    top: -10px;
+
+}
+
+.content .content-sibar ul li.active b:nth-child(1):before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 10px;
+    width: 100%;
+    background-color: aliceblue;
+    border-bottom-right-radius: 10px;
+
+}
+
+.content .content-sibar ul li.active b:nth-child(2) {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+
+}
+
+.content .content-sibar ul li.active b:nth-child(2):before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 10px;
+    width: 100%;
+    background-color: aliceblue;
+    border-top-right-radius: 10px;
+
+}
+
+.content .content-sibar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.content .content-main {
+    flex: 5;
+    height: 100vh;
+    background-color: #fff;
+    overflow-y: hidden;
+}
+
+.content-main .race {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+    margin-bottom: 50px;
+}
+
+/* Race Results card */
+.raceCard {
+    z-index: 0;
+    width: 90%;
+    height: 100px;
+    display: flex;
+    padding: 0px 5px;
+    border: 1px solid rgb(207, 184, 184);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.raceCard .raceCard-img {
+    display: none;
+}
+
+.raceCard .raceCard-detail {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+
+.raceCard .raceCard-detail .infor {
+    flex: 1;
+    display: flex;
+
+}
+
+.raceCard .raceCard-detail .infor .persion {
+    order: 2;
+    width: 70%;
+}
+
+.raceCard .raceCard-detail .infor .persion .name {
+    height: 50%;
+    padding: 0px 5px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #444;
+    justify-content: space-between;
+}
+
+.raceCard .raceCard-detail .infor .persion .name .number {
+    background-color: coral;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.raceCard .raceCard-detail .infor .persion .name .number span {
+    color: #fff;
+}
+
+.raceCard .persion .name span {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 20px;
+    color: #222;
+}
+
+.raceCard .infor .persion .teams span {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 15px;
+    color: #555;
+}
+
+.raceCard .infor .persion .name .national {
+    height: 70%;
+    width: 40px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.raceCard .infor .persion .teams {
+    height: 50%;
+    padding: 0px 5px;
+    display: flex;
+    align-items: center;
+}
+
+.raceCard .raceCard-detail .infor .persion .teams .car {
+    display: none;
+}
+
+.raceCard .raceCard-detail .infor .position {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+}
+
+
+.position span {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 600;
+    text-shadow: rgb(255, 0, 0) 1px 0 10px;
+}
+
+.raceCard .raceCard-detail .results {
+    flex: 1;
+    height: 100%;
+
+}
+
+
+
+.raceCard .results ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 0px 10px;
+    column-gap: 30px;
+    row-gap: 10px;
+}
+
+.raceCard .results ul li {
+    height: 19px;
+    display: flex;
+    align-items: center;
+    color: #777;
+}
+
+
+.raceCard .results ul li span {
+    padding-left: 10px;
+}
+
+.raceCard .results ul li span label {
+    display: none;
+}
+
+.raceCard.active .results ul li span label:nth-child(1) {
+    display: inline;
+}
+
+.raceCard.active .results ul li span label:nth-child(2) {
+    display: none;
+}
+
+
+.raceCard.active .results ul li {
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.raceCard.active {
+    z-index: 10;
+    width: 92%;
+    height: 250px;
+    display: flex;
+    background-color: rgb(253, 253, 253);
+    padding: 10px 0px;
+    border: 1px solid rgb(207, 184, 184);
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.raceCard.active .raceCard-img {
+    display: contents;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.raceCard.active .raceCard-img .img-effect {
+    width: 80%;
+    height: 80%;
+}
+
+.raceCard.active .raceCard-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: darken;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.raceCard.active .raceCard-img img:hover {
+    transform: scale(1.1);
+}
+
+.raceCard.active .raceCard-detail {
+    display: block;
+    flex: 2;
+    padding: 0px;
+}
+
+.raceCard.active .raceCard-detail .infor {
+    width: 100%;
+    height: 40%;
+    display: flex;
+}
+
+.raceCard.active .infor .persion {
+    flex: 4;
+    order: 1;
+    display: block;
+}
+
+.raceCard.active .persion .name span {
+    font-size: 1.3em;
+}
+
+.raceCard.active .infor .persion .name .national {
+    width: 50px;
+}
+
+
+.raceCard.active .infor .persion .teams span {
+    font-size: 15px;
+}
+
+.raceCard.active .infor .persion .teams .car {
+    display: block;
+    margin-left: 50px;
+    height: 80%;
+    width: max(50px, 30%);
+}
+
+.raceCard.active .infor .position {
+    order: 2;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.raceCard.active .results {
+    width: 100%;
+    height: 60%;
+}
+
+
+/* Grand Prix Results */
+.content-caption {
+
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.content-table {
+    min-height: 80vh;
+    width: 100%;
+}
+
+.content-table ul {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    list-style-type: none;
+    column-gap: 20px;
+    border: 1px solid rgba(255, 149, 149, 0.693);
+    border-radius: 50px;
+}
+
+
+.content-table ul:nth-child(odd) {
+    background-color: gainsboro;
+}
+
+.content-table ul:hover {
+    background-color: rgba(255, 149, 149, 0.693);
+    height: 75px;
+}
+
+.content-table ul li {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.content-table ul li:nth-child(1) {
+    padding-left: 35px;
+}
+
+.content-table ul li:nth-child(4) {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+.content-table ul:nth-child(1) {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    list-style-type: none;
+    column-gap: 20px;
+    border: rgba(253, 253, 253, 0.693);
+    background-color: #fff;
+}
+
+.content-table ul:nth-child(1):hover {
+    background-color: rgba(255, 255, 255, 0.693);
+    ;
+    height: 20px;
+}
+
+.listItem {
+    width: 90%;
+}
+
+.listItem ul {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    list-style-type: none;
+    column-gap: 20px;
+    border: 1px solid rgba(255, 149, 149, 0.693);
+    border-radius: 5px;
+}
+
+.listItem ul li {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.listItem ul:nth-child(odd) {
+    background-color: gainsboro;
+}
+
+.listItem ul:hover {
+    background-color: rgba(255, 149, 149, 0.693);
+    height: 75px;
+}
+
+.listItem ul:nth-child(1) {
+    display: flex;
+    height: 45px;
+    align-items: center;
+    list-style-type: none;
+    column-gap: 20px;
+    border: rgba(253, 253, 253, 0.693);
+    background-color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.listItem ul:nth-child(1):hover {
+    background-color: rgba(255, 255, 255, 0.693);
+    height: 20px;
+}
+
+.listItem ul li:nth-child(1) {
+    padding-left: 35px;
+}
+
+.listItem ul li:nth-child(3) {
+    flex: 2;
+
+    /* text-overflow: ellipsis;
+    overflow: hidden;
+white-space: nowrap; */
+}
+
+.listItem ul li:nth-child(4) {
+    flex: 2;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 992px) {
+
+    .raceCard .position span {
+        font-size: 40px;
+    }
+
+    .raceCard .persion .name span {
+        font-size: 15px;
+    }
+
+    .raceCard .infor .persion .name .national {
+        display: none;
+    }
+
+    .raceCard .infor .persion .teams span {
+        font-size: 13px;
+    }
+
+    .raceCard .results ul {
+        column-gap: 5px;
+    }
+
+    .raceCard .position span {
+        font-size: 45px;
+    }
+
+    .raceCard.active .infor .persion .name .national {
+        display: inline;
+    }
+
+    .raceCard.active .results ul li {
+        height: 14%;
+    }
+
+    .listItem ul li:nth-child(1) {
+        padding-left: 5px;
+    }
+
+    #fastestLaps .listItem ul li:nth-child(6),
+    li:nth-child(7) {
+        flex: 2;
+    }
+
+    #fastestLaps .listItem ul li:nth-child(7) {
+        flex: 2;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container-flud {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .raceCard,
+    .raceCard.active {
+        width: 100%;
+    }
+
+    .content .menu {
+        display: inline;
+        position: absolute;
+        z-index: 15;
+        top: -3%;
+        cursor: pointer;
+        width: 10%;
+        height: 8%;
+
+        background-color: rgb(171 81 81 / 58%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content .menu.active {
+        right: 10%;
+        top: 5%;
+    }
+
+    .content {
+        position: relative;
+    }
+
+    .content .content-sibar {
+        display: none;
+
+    }
+
+    .content .content-sibar.active {
+        display: none;
+        position: absolute;
+        z-index: 10;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content .content-sibar ul {
+        padding: 0;
+        width: 100%;
+    }
+
+    .content .content-sibar ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content .content-sibar ul li.active {
+        border: 0;
+        border-radius: 0px;
+    }
+
+    .content .content-sibar ul li.active b {
+        display: none;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .raceCard .results ul li:nth-child(7) {
+        display: none;
+    }
+
+    .raceCard .results ul li:nth-child(8) {
+        display: none;
+    }
+
+    .raceCard .results ul li:nth-child(9) {
+        display: none;
+    }
+
+    .raceCard.active .results ul li:nth-child(7) {
+        display: inline;
+    }
+
+    .raceCard.active .results ul li:nth-child(8) {
+        display: inline;
+    }
+
+    .raceCard.active .results ul li:nth-child(9) {
+        display: inline;
+    }
+
+    .raceCard.active .results ul li span label:nth-child(2) {
+        display: inline;
+    }
+
+    .raceCard.active .results ul li span label:nth-child(1) {
+        display: none;
+    }
+
+    .raceCard .position span {
+        font-size: 30px;
+    }
+}
